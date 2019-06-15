@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "BpDashboard",
+  "version": "1.3",
+	"description": "Company Dashboard",
+  
+	"icons": {
+    "128": "icon.png"
+  },
+	"permissions": [
+		"notifications"
+	],
+  "background": {
+    "scripts": ["jquery-3.1.1.min.js", "background.js"]
+  },
+	"browser_action": {
+		"default_title": "Show BpDashboard",
+		"default_icon": "icon_good.png",
+		"default_popup": "popup.html"
+	},
+	"update_url": "https://companyurl:123/update.xml",
+	"options_page": "options.html",
+	"offline_enabled": true
+}

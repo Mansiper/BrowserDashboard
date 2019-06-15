@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang='ru'>
+<head>
+	<title>BpDashboard</title>
+	<meta charset='utf-8' />
+  <script src="jquery-3.1.1.min.js" type="text/javascript"></script>
+  <script src="background.js" type="text/javascript"></script>
+	<link rel='stylesheet' href='styles.css' />
+</head>
+<body>
+  <h1>BpDashboard<span id="connError" class="hidden"> (disconnected)</span></h1>
+  <hr>
+  <div class="content">
+    <div class="block left">
+      <div class="sem">
+        <h3 class="left">Back test</h3>
+        <button id="backtest_check_1" class="color-button yellow right">
+          <a href="https://companytestsite/Page1" title="Page1" target="_blank">&nbsp;</a>
+        </button>
+        <button id="backtest_check_2" class="color-button yellow right">
+          <a href="https://companytestsite/Page2" title="Page2" target="_blank">&nbsp;</a>
+        </button>
+      </div>
+      <div class="sem">
+        <h3 class="left">API test</h3>
+        <button id="apitest_check" class="color-button yellow right">
+          <a href="https://companytestsite/api/test" title="Test 1 query" target="_blank">&nbsp;</a>
+        </button>
+      </div>
+      <div class="sem">
+        <h3 class="left">API2 test</h3>
+        <button id="api2test_check" class="color-button yellow right">
+          <a href="https://companytestsite/api2/test" title="Test 2 query" target="_blank">&nbsp;</a>
+        </button>
+      </div>
+      <div class="sem">
+        <h3 class="left">Db test</h3>
+        <button id="dbtest_check" class="color-button yellow right"></button>
+      </div>
+    </div>
+    <div class="block left">
+      <div class="sem">
+        <h3 class="left">Back</h3>
+        <button id="back_check_1" class="color-button yellow right">
+          <a href="https://companysite/Page1" title="Page1" target="_blank">&nbsp;</a>
+        </button>
+        <button id="back_check_2" class="color-button yellow right">
+          <a href="https://companysite/Page2" title="Page2" target="_blank">&nbsp;</a>
+        </button>
+      </div>
+      <div class="sem">
+        <h3 class="left">API</h3>
+        <button id="api_check" class="color-button yellow right">
+          <a href="https://companysite/api/test" title="Test 1 query" target="_blank">&nbsp;</a>
+        </button>
+      </div>
+      <div class="sem">
+        <h3 class="left">API2</h3>
+        <button id="api2_check" class="color-button yellow right">
+          <a href="https://companysite/api2/test" title="Test 2 query" target="_blank">&nbsp;</a>
+        </button>
+      </div>
+      <div class="sem">
+        <h3 class="left">GPS svc</h3>
+        <button id="gps_check" class="color-button yellow right">
+          <a href="https://companysite/GpsPage" title="GPS page" target="_blank">&nbsp;</a>
+        </button>
+      </div>
+      <div class="sem">
+        <h3 class="left">Calls svc</h3>
+        <button id="as_check" class="color-button yellow right">
+          <a href="https://companyurl/api/calls" title="Calls query" target="_blank">&nbsp;</a>
+        </button>
+      </div>
+      <div class="sem">
+        <h3 class="left">Calls2 svc</h3>
+        <button id="asev_check" class="color-button yellow right">
+          <a href="https://companysite/CallsPage" title="Calls page" target="_blank">&nbsp;</a>
+        </button>
+      </div>
+      <div class="sem">
+        <h3 class="left">Db main</h3>
+        <button id="dbmain_check" class="color-button yellow right"></button>
+      </div>
+    </div>
+    <div class="block right">
+      <div class="sem" style="display: inline-block">
+        <h3 class="left">R: </h3><h2 id="DB_Bytes_sent" class="left">0 B/s</h2>
+        <h2 id="DB_Bytes_received" class="right">0 B/s</h2><h3 class="right">W: </h3>
+      </div>
+      <div class="sem">
+        <h2 id="DB_Queries" class="left edge">0 queries/s</h2>
+        <h2 id="DB_Com_select" class="right">0 selects/s</h2>
+      </div>
+      <div class="sem">
+        <h2 id="DB_Com_insert" class="left edge">0 inserts/s</h2>
+        <h2 id="DB_Com_update" class="right">0 updates/s</h2>
+      </div>
+      <div class="sem">
+        <h2 id="DB_Com_delete" class="left edge">0 deletes/s</h2>
+        <h2 id="DB_Threads_connected" class="right">0</h2><h2 id="DB_Threads_running" class="right">0 /</h2><h3 class="right">Con:</h3>
+      </div>
+      <div class="sem">
+        <h3 class="left">Peak</h3>
+        <h2 id="DB_Max_used_connections_time" class="right">01.01.2000 00:00:00</h2>
+        <h2 id="DB_Max_used_connections" class="right yellow">0</h2>
+      </div>
+      <div class="sem">
+        <h3 class="left">Uptime</h3><h2 id="DB_Uptime" class="left">0 секунд</h2>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
